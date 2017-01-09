@@ -225,7 +225,7 @@ class Lightbox extends Component {
 					<Swipeable onSwipedLeft={this.gotoNext} onSwipedRight={this.gotoPrev} />
 				*/}
 				<img
-					id=''
+					id={this.props.annotatable + '-' + image.src}
 					className={css(classes.image) + ' annotatable'}
 					onClick={!!onClickImage && onClickImage}
 					sizes={sizes}
