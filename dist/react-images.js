@@ -1913,7 +1913,7 @@ var Lightbox = (function (_Component) {
 				'figure',
 				{ className: (0, _aphroditeNoImportant.css)(classes.figure) },
 				_react2['default'].createElement('img', {
-					id: this.props.annotatable + '-' + image.src,
+					id: (this.props.annotoriousIdentifier || 'annotorious') + '-' + image.src,
 					className: 'annotatable',
 					onClick: !!onClickImage && onClickImage,
 					sizes: sizes,
