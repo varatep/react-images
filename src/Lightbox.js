@@ -226,7 +226,7 @@ class Lightbox extends Component {
 				*/}
 				<img
 					id={(this.props.annotoriousIdentifier || 'annotorious') + '-' + image.src}
-					className={'annotatable'}
+					className={css(classes.image) + ' annotatable'}
 					onClick={!!onClickImage && onClickImage}
 					sizes={sizes}
 					src={image.src}
